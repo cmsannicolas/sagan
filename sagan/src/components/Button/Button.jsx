@@ -1,4 +1,13 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+const PROPTYPES = {
+  label: PropTypes.string
+};
+
+const DEFAULT_PROPS = {
+  label: 'Submit'
+};
 
 class Button extends Component {
 
@@ -12,4 +21,8 @@ class Button extends Component {
 
   }
 }
-export default Button;
+
+Button.propTypes = PROPTYPES;
+Button.defaultProps = DEFAULT_PROPS;
+
+export {Button};

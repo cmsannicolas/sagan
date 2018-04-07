@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Button from '../../Button/Button';
+import { Button } from 'components/Button';
+import { TextInput } from 'components/TextInput';
 
 class Home extends Component {
 
@@ -7,10 +8,11 @@ class Home extends Component {
 
     return (
       <div className="home">
-        <Button label="Hello world" />
+        <TextInput />
+        <Button />
       </div>
     );
 
   }
 }
-export default Home;
+export { Home };
